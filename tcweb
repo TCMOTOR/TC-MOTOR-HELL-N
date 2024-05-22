@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC Motor - Compraventa de Coches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            color: #ffd700;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .car-item {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .car-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .car-item h3 {
+            color: #ffd700;
+            margin: 10px 0 5px;
+        }
+        .car-item p {
+            margin: 0;
+        }
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+            color: #ffd700;
+        }
+        form {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #ffd700;
+            color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="tc.png" alt="TC Motor Logo">
+        <h1>TC Motor</h1>
+        <p>Compraventa de Coches</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2 class="section-title">Nuestros Coches</h2>
+            <div class="gallery">
+                <div class="car-item">
+                    <img src="car1.jpg" alt="Coche 1">
+                    <h3>Coche 1</h3>
+                    <p>Descripción del coche 1.</p>
+                </div>
+                <div class="car-item">
+                    <img src="car2.jpg" alt="Coche 2">
+                    <h3>Coche 2</h3>
+                    <p>Descripción del coche 2.</p>
+                </div>
+                <div class="car-item">
+                    <img src="car3.jpg" alt="Coche 3">
+                    <h3>Coche 3</h3>
+                    <p>Descripción del coche 3.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Contacto</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 TC Motor. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
